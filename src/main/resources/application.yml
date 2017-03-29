@@ -4,14 +4,14 @@ server:
 spring: 
     datasource: 
         driver-class-name: com.mysql.jdbc.Driver
-        url: jdbc:mysql://rm-bp1u67e316odxhj5g.mysql.rds.aliyuncs.com:3306/jfpt_zc_kf?autoReconnect=true
-        username: jfpt_zc_kf
-        password: xKAbUALCHQdPVPZxnwobpkfRUayoGJS9
+        url: jdbc:mysql://192.168.0.72:3306/tom?autoReconnect=true
+        username: root
+        password: root
 
 mybatis: 
     mapperLocations: classpath*:xml/**/*.xml
-    typeAliasesPackage: com.ancun.yunsmail.persistence.model
-    basePackage: com.ancun.yunsmail.persistence.mapper
+    typeAliasesPackage: com.open.yun.ysmsvs.model
+    basePackage: com.open.yun.ysmsvs.mapper
       
 logging:  
     file: /var/open/common/info.log
